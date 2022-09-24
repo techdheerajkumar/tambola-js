@@ -1,0 +1,27 @@
+{
+  "name": "tambola",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:ts": "tsc -w",
+    "start:js": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techdheerajkumar/tambola-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/techdheerajkumar/tambola-js/issues"
+  },
+  "homepage": "https://github.com/techdheerajkumar/tambola-js#readme",
+  "dependencies": {
+    "typescript": "^4.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
