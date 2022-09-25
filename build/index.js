@@ -7,12 +7,13 @@
 **/
 
 
-let megaArray = [];
+
 function nextTenRandomNumber(start) {
     return Math.floor(Math.random() * 10) + start;
 }
 
 function getUniqueNumbers() {
+    let megaArray = [];
     let counter = 1;
     while (counter <= 90) {
         let column = [];
@@ -26,7 +27,7 @@ function getUniqueNumbers() {
             } else if (column[i - 1] !== randomNumber) {
                 column.push(randomNumber)
             } else {
-                column.push(0)
+                i--
             }
         }
 
@@ -35,7 +36,7 @@ function getUniqueNumbers() {
         counter += 10;
 
     }
-
+    
     return megaArray
 }
 
@@ -43,18 +44,18 @@ function getUniqueNumbers() {
 function createSlip() {
     const slipContainer = document.getElementById('slipContainer');
     let slipNumbers = getUniqueNumbers();
+    
     slipContainer.innerHTML += `
         
         <div class="tambola-slip p-3">
         <div class="box-wrapper p-2 d-flex">
 
         ${slipNumbers.map(item => {
-        console.log(item.length)
         return `
                 <div class="rows d-flex flex-wrap justify-content-between mb-1">
                 <div class="columns">
                 ${item.map(num => {
-            return `<span class="box d-flex align-items-center text-center justify-content-center"><h6>${num > 0 ? num : ''}</h6></span>`
+            return `<span class="box d-flex align-items-center text-center justify-content-center"><h6>${num}</h6></span>`
         }).join(' ')
             }
                 </div>
