@@ -1,0 +1,2 @@
+1. Generating 12 unique numbers and pushing into an array;
+    a. create 1 random number generating variable;

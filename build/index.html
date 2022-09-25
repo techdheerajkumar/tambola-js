@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- <div class="tambola-slip p-3">
+      <div class="box-wrapper p-2 d-flex">
+        <div class="rows d-flex flex-wrap justify-content-between mb-1">
+          <div class="columns">
+            <span class="box d-flex align-items-center text-center justify-content-center"><h6></h6></span>
+            <span class="box d-flex align-items-center text-center justify-content-center"><h6></h6></span>
+            <span class="box d-flex align-items-center text-center justify-content-center"><h6></h6></span>
+          </div>
+        </div>        
+      </div>
+    </div> -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="container">
+          <div class="col-md-4" id="slipContainer">
+            <h1>Generated Slips</h1>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+      </div>
+    </div>
 
-</head>
-<body>
-    
+    <button id="generateSlipBtn" class="btn btn-info text-white">Generate Slip</button>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

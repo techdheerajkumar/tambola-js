@@ -1,0 +1,17 @@
+.tambola-slip {
+    height: 195px;
+    background: #f9f9f9;
+    width: 400px;
+}
+.box-wrapper {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #000;
+}
+.box {
+    height: 45px;
+    width: 39px;
+    border: 2px solid #000;
+    font-size: 16px;
+    text-align: center;
+}
